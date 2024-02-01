@@ -8,5 +8,5 @@ runs:
   using: "composite"
   steps:
     - id: current-commit-is-tagged
-      run: current-commit-is-tagged.sh
+      run: ./current-commit-is-tagged.sh
       shell: bash
