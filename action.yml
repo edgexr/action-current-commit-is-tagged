@@ -1,0 +1,12 @@
+name: current commit is tagged
+description: Check if the current commit is tagged
+outputs:
+  current_commit_is_tagged:
+    description: If current commit is tagged, will be set to 1, otherwise 0
+    value: ${{ steps.current-commit-is-tagged.outputs.current_commit_is_tagged }}
+runs:
+  using: "composite"
+  steps:
+    - id: current-commit-is-tagged
+      run: current-commit-is-tagged.sh
+      shell: bash
