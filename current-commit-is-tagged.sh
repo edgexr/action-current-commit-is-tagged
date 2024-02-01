@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # get current commit
 current_commit=`git rev-parse HEAD`
 echo "current commit is $current_commit"
